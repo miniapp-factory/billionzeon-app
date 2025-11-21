@@ -1,9 +1,9 @@
-import BallGame from "@/components/ball-game";
+import FPSGame from "@/components/fps-game";
 import { generateMetadata } from "@/lib/farcaster-embed";
 
 export { generateMetadata };
 
 export default function Home() {
   // NEVER write anything here, only use this page to import components
-  return <BallGame />;
+  return <FPSGame />;
 }
