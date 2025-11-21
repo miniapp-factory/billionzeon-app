@@ -54,3 +54,37 @@
 
 # 2025-11-21 08:51:12.718989
 +Design a high-end online multiplayer first-person shooter (FPS) with AAA-level ultra-realistic graphics set in a near-future sci-fi world (year 2087). The Earth is divided between two rival factions: the technocratic 'Neo-Alliance' and the mercenary-led 'Iron Syndicate'. The game features dynamic weather systems, real-time ray-traced lighting, 8K textures, and motion-captured character animations. Players choose from four distinct tactical classes—Assault, Recon, Support, and Infiltrator—each with unique abilities and modular weapon customization. Maps include futuristic urban environments like Neo-Tokyo megacity, orbital space stations, and post-war Siberian ruins. Gameplay emphasizes competitive 5v5 matches with realistic ballistics, weapon recoil physics, and optional VR support.
+
+# 2025-11-21 10:32:58.732623
++import openai
++
++messages = [
++    {"role": "system", "content": """Kamu adalah Asisten Cerdas di dalam aplikasi bernama "SmartPal"... [masukkan seluruh prompt di atas]"""},
++    {"role": "user", "content": "Halo!"}
++]
++
++response = openai.ChatCompletion.create(
++    model="gpt-4o",
++    messages=messages
++)
++print(response.choices[0].message['content'])
+
+# 2025-11-21 10:32:58.733239
++import openai
++
++messages = [
++    {"role": "system", "content": """Kamu adalah Asisten Cerdas di dalam aplikasi bernama "SmartPal"... [masukkan seluruh prompt di atas]"""},
++    {"role": "user", "content": "Halo!"}
++]
++
++response = openai.ChatCompletion.create(
++    model="gpt-4o",
++    messages=messages
++)
++print(response.choices[0].message['content'])
+
+# 2025-11-21 10:33:33.513867
++apply changes
+
+# 2025-11-21 10:33:33.514302
++apply changes
