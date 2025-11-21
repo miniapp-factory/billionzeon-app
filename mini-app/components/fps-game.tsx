@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 
 export default function FPSGame() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [score, setScore] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
@@ -19,6 +18,8 @@ export default function FPSGame() {
 
     function draw() {
       if (!ctx) return;
+      const canvas = canvasRef.current;
+      if (!canvas) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = "#111";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -52,7 +53,6 @@ export default function FPSGame() {
         height={600}
         className="border rounded"
       />
-      <p className="text-lg">Score: {score}</p>
       {!isPlaying && (
         <button
           onClick={() => setIsPlaying(true)}
