@@ -88,3 +88,121 @@
 
 # 2025-11-21 10:33:33.514302
 +apply changes
+
+# 2025-11-22 02:52:24.479940
++Game: "Speed Drift: Urban Rush"
++Genre: Racing / Arcade
++Platform: Mobile (portrait)
++
++Premise
++- Pemain berperan sebagai RYU, pengendara baru di kota NEON-CITY yang ingin naik daun dengan memenangkan balapan jalanan.
++- Setiap kemenangan memberi REPUTATION POINTS (REP) yang bisa ditukar dengan kendaraan baru, skin, atau uang dalam game (CASH).
++
++Core Loop
++1. Tap "RACE" → Loading 2 s → Countdown 3-2-1-GO
++2. Control: swipe left/right untuk steer, hold kanan untuk boost, tap kiri untuk drift
++3. Target: finish posisi 1-3 untuk mendapatkan REP & CASH
++4. Setelah race: hasil + reward screen → kembali ke lobby
++
++Reward Structure
++- Posisi 1: 50 REP + 250 CASH
++- Posisi 2: 25 REP + 100 CASH
++- Posisi 3: 10 REP + 50 CASH
++- Daily race pertama: bonus 2× REP
++- Ads watch opsional: +30 % CASH (limit 5×/hari)
++
++Progression
++- Total REP 0-499: RANK "Street Rookie"
++- REP 500-1499: RANK "City Runner" → buka akses ke mobil SPORT
++- REP 1500-2999: RANK "Neon King" → buka akses ke mobil SUPER
++- REP 3000+: RANK "Urban Legend" → leaderboard global
++
++Micro-Goals (muncul sebagai quest harian)
++- Drift total 2 km → 30 REP
++- Gunakan boost 20× → 20 REP
++- Menang 3× berturut-turut → 100 REP + lootbox gratis
++
++Monetisasi (non-intrusive)
++- Iklan opsional hanya untuk multiplier reward & gacha crate.
++- Shop menjual skin (kosmetik) dengan harga CASH; tidak ada pay-to-win stat.
++
++UX Notes
++- Waktu rata-rata 1 balapan: 60-90 detik (sesuai mobile)
++- Tombol "CLAIM" di reward screen harus besar & berwarna kontras
++- Vibration 50 ms tiap kali drift perfect → feedback
++- Simpan progress lokal + cloud (Google Play / Game Center)
++
++Tone & Voice
++- Bahasa Indonesia santai, energik: "Gaspol, bos! Klaim REP-mu sekarang!"
++- Gunakan icon emoji ⚡🔥 untuk boost & record baru.
++
++Asset Checklist
++- 4 environment (night city, harbor, tunnel, rooftop)
++- 8 mobil: 3 default, 5 unlock via REP
++- 1 BGM utama 140 BPM lo-fi synthwave (loop 60 s)
++- SFX: engine, drift, boost, crash, countdown
++
++Analytics
++- Track finish position distribution
++- Retention D1, D7
++- Ad watch rate vs. reward claimed
++- REP inflation per hari (balance economy)
+
+# 2025-11-22 02:52:24.480864
++Game: "Speed Drift: Urban Rush"
++Genre: Racing / Arcade
++Platform: Mobile (portrait)
++
++Premise
++- Pemain berperan sebagai RYU, pengendara baru di kota NEON-CITY yang ingin naik daun dengan memenangkan balapan jalanan.
++- Setiap kemenangan memberi REPUTATION POINTS (REP) yang bisa ditukar dengan kendaraan baru, skin, atau uang dalam game (CASH).
++
++Core Loop
++1. Tap "RACE" → Loading 2 s → Countdown 3-2-1-GO
++2. Control: swipe left/right untuk steer, hold kanan untuk boost, tap kiri untuk drift
++3. Target: finish posisi 1-3 untuk mendapatkan REP & CASH
++4. Setelah race: hasil + reward screen → kembali ke lobby
++
++Reward Structure
++- Posisi 1: 50 REP + 250 CASH
++- Posisi 2: 25 REP + 100 CASH
++- Posisi 3: 10 REP + 50 CASH
++- Daily race pertama: bonus 2× REP
++- Ads watch opsional: +30 % CASH (limit 5×/hari)
++
++Progression
++- Total REP 0-499: RANK "Street Rookie"
++- REP 500-1499: RANK "City Runner" → buka akses ke mobil SPORT
++- REP 1500-2999: RANK "Neon King" → buka akses ke mobil SUPER
++- REP 3000+: RANK "Urban Legend" → leaderboard global
++
++Micro-Goals (muncul sebagai quest harian)
++- Drift total 2 km → 30 REP
++- Gunakan boost 20× → 20 REP
++- Menang 3× berturut-turut → 100 REP + lootbox gratis
++
++Monetisasi (non-intrusive)
++- Iklan opsional hanya untuk multiplier reward & gacha crate.
++- Shop menjual skin (kosmetik) dengan harga CASH; tidak ada pay-to-win stat.
++
++UX Notes
++- Waktu rata-rata 1 balapan: 60-90 detik (sesuai mobile)
++- Tombol "CLAIM" di reward screen harus besar & berwarna kontras
++- Vibration 50 ms tiap kali drift perfect → feedback
++- Simpan progress lokal + cloud (Google Play / Game Center)
++
++Tone & Voice
++- Bahasa Indonesia santai, energik: "Gaspol, bos! Klaim REP-mu sekarang!"
++- Gunakan icon emoji ⚡🔥 untuk boost & record baru.
++
++Asset Checklist
++- 4 environment (night city, harbor, tunnel, rooftop)
++- 8 mobil: 3 default, 5 unlock via REP
++- 1 BGM utama 140 BPM lo-fi synthwave (loop 60 s)
++- SFX: engine, drift, boost, crash, countdown
++
++Analytics
++- Track finish position distribution
++- Retention D1, D7
++- Ad watch rate vs. reward claimed
++- REP inflation per hari (balance economy)
