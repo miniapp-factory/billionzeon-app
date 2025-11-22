@@ -14,7 +14,7 @@ export default function RacingGame() {
     <div className="flex flex-col items-center gap-4 p-4">
       <h1 className="text-2xl font-bold">Speed Drift: Urban Rush</h1>
       <p className="text-center">
-        Tap "RACE" to start the race. Swipe left/right to steer, hold right for boost, tap left for drift.
+        Tap 'RACE' to start the race. Swipe left/right to steer, hold right for boost, tap left for drift.
       </p>
       <button
         onClick={startRace}
