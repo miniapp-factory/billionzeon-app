@@ -206,3 +206,127 @@
 +- Retention D1, D7
 +- Ad watch rate vs. reward claimed
 +- REP inflation per hari (balance economy)
+
+# 2025-11-23 01:28:46.694221
++# PROMPT: Aplikasi Jual Beli Kopi - "Coffee Connect"
++
++# FITUR UTAMA:
++## Untuk Pembeli:
++1. **Katalog Kopi Dinamis**
++   - Filter: Negara asal, jenis roast (light/medium/dark), metode brew
++   - Sortir: Harga Rating, Tahun produksi
++   - Pencarian: Nama kopi, nama petani, kata kunci
++
++2. **Sistem Pembelian & Checkout**
++   - Keranjang belanja dengan multiple seller
++   - Opsi pembayaran: E-wallet, Transfer bank, COD
++   - Estimasi ongkir berat volume
++
++3. **Fitur Edukasi**
++   - Profil petani & kebun kopi
++   - Panduan brew & pairing food
++   - Video brewing tutorial
++
++## Untuk Penjual:
++1. **Manajemen Toko**
++   - Dashboard penjualan real-time
++   - Stok otomatis (notifikasi rendah)
++   - Tools pengeditan deskripsi kopi
++
++2. **Produk Baru**
++   - Upload foto/video kopi
++   - Pemetaan origin kebun kopi
++   - Input skor SCA/Aliance
++
++## Komunitas:
++1. **Review & Rating**
++   - Sistem ulasan berfoto
++   - Kuis pendek identifikasi aroma
++
++2. **Forum Kopi**
++   - Diskusi varietas kopi
++   - Sharing recipe brew
++   - Event coffee tour & workshop
++
++# BACKEND LOGIC:
++class CoffeeTransaction:
++    def __init__(self):
++        self.inventory = {}
++        self.cart = {}
++    
++    def add_to_cart(self, user_id, coffee_id, quantity):
++        # Implementasi logika keranjang
++        pass
++    
++    def calculate_shipping(self, weight, destination):
++        # Hitung ongkir berat distrik
++        pass
++
++# DATABASE SCHEMA:
++# - Users (buyer/seller profile)
++# - CoffeeProducts (origin, roast_date, cert_scoring)
++# - Transactions (status_tracking)
++# - Reviews (image_proof aroma)
++# - FarmerProfiles (harvest_records)
+
+# 2025-11-23 01:28:46.697012
++# PROMPT: Aplikasi Jual Beli Kopi - "Coffee Connect"
++
++# FITUR UTAMA:
++## Untuk Pembeli:
++1. **Katalog Kopi Dinamis**
++   - Filter: Negara asal, jenis roast (light/medium/dark), metode brew
++   - Sortir: Harga Rating, Tahun produksi
++   - Pencarian: Nama kopi, nama petani, kata kunci
++
++2. **Sistem Pembelian & Checkout**
++   - Keranjang belanja dengan multiple seller
++   - Opsi pembayaran: E-wallet, Transfer bank, COD
++   - Estimasi ongkir berat volume
++
++3. **Fitur Edukasi**
++   - Profil petani & kebun kopi
++   - Panduan brew & pairing food
++   - Video brewing tutorial
++
++## Untuk Penjual:
++1. **Manajemen Toko**
++   - Dashboard penjualan real-time
++   - Stok otomatis (notifikasi rendah)
++   - Tools pengeditan deskripsi kopi
++
++2. **Produk Baru**
++   - Upload foto/video kopi
++   - Pemetaan origin kebun kopi
++   - Input skor SCA/Aliance
++
++## Komunitas:
++1. **Review & Rating**
++   - Sistem ulasan berfoto
++   - Kuis pendek identifikasi aroma
++
++2. **Forum Kopi**
++   - Diskusi varietas kopi
++   - Sharing recipe brew
++   - Event coffee tour & workshop
++
++# BACKEND LOGIC:
++class CoffeeTransaction:
++    def __init__(self):
++        self.inventory = {}
++        self.cart = {}
++    
++    def add_to_cart(self, user_id, coffee_id, quantity):
++        # Implementasi logika keranjang
++        pass
++    
++    def calculate_shipping(self, weight, destination):
++        # Hitung ongkir berat distrik
++        pass
++
++# DATABASE SCHEMA:
++# - Users (buyer/seller profile)
++# - CoffeeProducts (origin, roast_date, cert_scoring)
++# - Transactions (status_tracking)
++# - Reviews (image_proof aroma)
++# - FarmerProfiles (harvest_records)
