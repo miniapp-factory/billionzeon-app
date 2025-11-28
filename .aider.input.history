@@ -342,3 +342,75 @@
 
 # 2025-11-27 06:55:27.466357
 +"Design a hyper-detailed cinematic screenshot from a AAA open-world survival game set on a hostile alien planet. In the foreground, a battle-worn female astronaut in futuristic exosuit armor kneels beside a glowing bioluminescent wreckage of her crashed spaceship, scanning for resources with a holographic HUD visor. Towering crystalline rock formations pierce a stormy purple sky filled with dual moons and swarms of bioluminescent flying insects. In the background, massive biomechanical creatures lurk in the fog-shrouded valleys, with distant lava rivers and abandoned alien megastructures. Atmosphere: tense, immersive, post-apocalyptic wonder. Ultra-realistic rendering in Unreal Engine 5 style, ray-traced lighting, volumetric fog, 16K resolution, dynamic god rays, intricate details on rust, scars, and alien flora, inspired by No Man's Sky, Subnautica, and The Last of Us Part II."
+
+# 2025-11-28 17:20:01.562880
++You are an expert full-stack web developer specializing in game development. Create a complete, fully playable chess game as a single HTML file that runs in any modern web browser without external dependencies (no libraries like React, Chess.js, or CDNs—pure vanilla HTML, CSS, and JavaScript).
++
++Requirements:
++- **Visual Board**: 8x8 chessboard using HTML5 Canvas (512x512 pixels, 64px per square). Dark squares (#769656), light squares (#eeeed2). Highlight legal moves in light blue (#add8e6) and selected piece in yellow (#ffff00).
++- **Pieces**: Use Unicode chess symbols (e.g., ♔ for white king, ♚ for black king, etc.). Render them centered on squares with font-size 48px, bold sans-serif font.
++- **Game Mechanics** (implement fully, no simplifications):
++  - Standard chess rules: All piece movements (pawn promotion to queen only, en passant, castling both sides for both players).
++  - Turn-based: White starts. Alternate turns.
++  - Validate moves: Only legal moves allowed. Prevent invalid moves like pinning king or moving through pieces.
++  - Detect check, checkmate, stalemate, and 50-move rule/draw by repetition (basic implementation).
++  - Piece promotion: Pawn reaching end promotes to queen (popup prompt for choice: Q, R, B, N).
++- **User Interaction**:
++  - Click to select a piece (highlight it), click target square to move (if legal).
++  - Drag-and-drop support as bonus (mouse/touch events).
++  - Mobile-friendly: Touch events.
++- **UI Elements**:
++  - Above board: Current turn indicator ("White's Turn" / "Black's Turn"), captured pieces lists (separate piles for white/black captures).
++  - Status messages below board: "Check!", "Checkmate! White wins!", "Stalemate!", etc.
++  - Buttons: New Game, Undo (last move), Flip Board.
++  - Move history list (SAN notation, e.g., "e4", "Nf3")—click to replay.
++- **Game State**:
++  - Use a 2D array for board (null for empty, objects for pieces {type: 'K', color: 'w'/'b'}).
++  - Track castling rights, en passant target, halfmove clock, fullmove number.
++  - Save/load game state to localStorage.
++- **AI Opponent**: Simple minimax AI for black (depth 3-4, alpha-beta pruning). White is human. Make it beat average players but not grandmasters.
++- **Code Structure**:
++  - Self-contained <html> with <style> and <script>.
++  - Modular JS: Functions for drawBoard(), isLegalMove(from, to), makeMove(), minimax(), etc.
++  - Efficient: 60 FPS redraws only on changes.
++  - No console.logs in production; use for debugging if needed.
++- **Edge Cases**: Handle all (promotion during en passant, insufficient material draws, etc.).
++- **Polish**: Smooth animations for moves (piece slides), capture effects (fade out), sounds optional (Web Audio API beeps).
++
++Output ONLY the complete HTML code in a single <pre><code> block, ready to copy-paste and save as index.html. Test mentally for bugs. Make it fun and professional!
+
+# 2025-11-28 17:20:01.563410
++You are an expert full-stack web developer specializing in game development. Create a complete, fully playable chess game as a single HTML file that runs in any modern web browser without external dependencies (no libraries like React, Chess.js, or CDNs—pure vanilla HTML, CSS, and JavaScript).
++
++Requirements:
++- **Visual Board**: 8x8 chessboard using HTML5 Canvas (512x512 pixels, 64px per square). Dark squares (#769656), light squares (#eeeed2). Highlight legal moves in light blue (#add8e6) and selected piece in yellow (#ffff00).
++- **Pieces**: Use Unicode chess symbols (e.g., ♔ for white king, ♚ for black king, etc.). Render them centered on squares with font-size 48px, bold sans-serif font.
++- **Game Mechanics** (implement fully, no simplifications):
++  - Standard chess rules: All piece movements (pawn promotion to queen only, en passant, castling both sides for both players).
++  - Turn-based: White starts. Alternate turns.
++  - Validate moves: Only legal moves allowed. Prevent invalid moves like pinning king or moving through pieces.
++  - Detect check, checkmate, stalemate, and 50-move rule/draw by repetition (basic implementation).
++  - Piece promotion: Pawn reaching end promotes to queen (popup prompt for choice: Q, R, B, N).
++- **User Interaction**:
++  - Click to select a piece (highlight it), click target square to move (if legal).
++  - Drag-and-drop support as bonus (mouse/touch events).
++  - Mobile-friendly: Touch events.
++- **UI Elements**:
++  - Above board: Current turn indicator ("White's Turn" / "Black's Turn"), captured pieces lists (separate piles for white/black captures).
++  - Status messages below board: "Check!", "Checkmate! White wins!", "Stalemate!", etc.
++  - Buttons: New Game, Undo (last move), Flip Board.
++  - Move history list (SAN notation, e.g., "e4", "Nf3")—click to replay.
++- **Game State**:
++  - Use a 2D array for board (null for empty, objects for pieces {type: 'K', color: 'w'/'b'}).
++  - Track castling rights, en passant target, halfmove clock, fullmove number.
++  - Save/load game state to localStorage.
++- **AI Opponent**: Simple minimax AI for black (depth 3-4, alpha-beta pruning). White is human. Make it beat average players but not grandmasters.
++- **Code Structure**:
++  - Self-contained <html> with <style> and <script>.
++  - Modular JS: Functions for drawBoard(), isLegalMove(from, to), makeMove(), minimax(), etc.
++  - Efficient: 60 FPS redraws only on changes.
++  - No console.logs in production; use for debugging if needed.
++- **Edge Cases**: Handle all (promotion during en passant, insufficient material draws, etc.).
++- **Polish**: Smooth animations for moves (piece slides), capture effects (fade out), sounds optional (Web Audio API beeps).
++
++Output ONLY the complete HTML code in a single <pre><code> block, ready to copy-paste and save as index.html. Test mentally for bugs. Make it fun and professional!
